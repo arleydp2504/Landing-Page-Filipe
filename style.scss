@@ -1,0 +1,702 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+
+
+/*Inicio do reset */
+body {
+    font-family: 'Sora', sans-serif;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: #06121e;
+}
+
+button {
+    font-family: 'Sora', sans-serif;
+    cursor: pointer;
+}
+
+svg {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+/* final do reset */
+
+
+/* Inicio do pop up */
+
+dialog {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(img/alerta\ de\ golpe.jpg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    padding: 0;
+}
+
+dialog::backdrop {
+    background-color: #0000009a;
+}
+
+.pop {
+    width: 42%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aviso {
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+}
+
+.alerta {
+    width: 210px;
+    border-radius: 10px;
+    color: rgb(255, 252, 252);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-color: #000000;
+}
+
+.fonte {
+    width: 210px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.7rem;
+    margin-top: 5px;
+
+}
+
+.x {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border: 0;
+    font-size: 24px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 768px) {
+    .aviso {
+        font-size: 1rem;
+    }
+
+    .alerta {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .fonte {
+        width: 100%;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+    dialog {
+        background-size: 100%;
+        height: 35%;
+    }
+
+    .x {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+
+/* Final do pop up */
+
+
+/*Header*/
+
+header {
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+svg {
+    color: white;
+}
+
+.header-icons {
+    display: flex;
+    gap: 14px;
+}
+
+.header-icons a:hover {
+    svg {
+        animation: translateY 0.8s infinite alternate;
+        color: green;
+    }
+}
+
+@keyframes translateY {
+    from {
+        transform: translateY(0) scale(1);
+    }
+
+    to {
+        transform: translateY(-8px) scale(1.2);
+    }
+}
+
+.header-button {
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    transition: background-color 0, 8s;
+}
+
+.header-button:hover {
+    border: 1px solid green;
+    background-color: green;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+@media screen and (max-width:768px) {
+    .header-content {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    svg {
+        margin-top: 16px;
+        width: 22px;
+        height: 22px;
+
+    }
+
+    .header-logo img {
+        width: 160px;
+        margin-top: 46px;
+    }
+
+}
+
+/* Fim do header*/
+
+/* Inicio do layout */
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.bg-home {
+    position: relative;
+}
+
+.bg-home::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(img/Penido\ e\ Penido\ \(247\).jpg);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+}
+
+.hero {
+    color: white;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1 {
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 60px;
+    }
+
+    p {
+        text-align: center;
+        margin: 14px 0;
+        font-size: 20px;
+    }
+}
+
+.button-contact {
+    padding: 14px 28px;
+    color: white;
+    background-color: green;
+    border: 0;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.button-contact:hover {
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@media screen and (max-width: 1465px) {
+    .bg-home::before {
+        background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(img/Penido\ e\ Penido\ \(242\).jpg);
+
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .bg-home::before {
+        background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(img/Penido\ e\ Penido\ \(258\).jpg);
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+
+        h1 {
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+}
+
+/* Fim do layout */
+
+/* Inicio do sobre */
+
+.about {
+    background-color: #06121e;
+    overflow: hidden;
+    color: white;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34 px 14px 64px 14px;
+
+    img {
+        max-width: 600px;
+    }
+}
+
+.about-content div {
+    flex: 1;
+}
+
+.about-description {
+    h2 {
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 14px;
+        line-height: 150%;
+        text-align: justify;
+    }
+}
+
+mark {
+    border-radius: 3px;
+    background-color: rgb(245, 245, 227);
+    padding: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    h2 {
+        align-items: center;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+}
+
+/* final do sobre */
+
+
+/* Inicio serciço */
+
+.services {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.service-content h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.service-content p {
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.serviços {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+}
+
+.serviço {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px #000;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 354px;
+        transition: transform 0.2s;
+    }
+}
+
+.serviço img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+
+}
+
+@media screen and (max-width: 768px) {
+    .serviços {
+        flex-direction: column;
+    }
+
+}
+
+/*Fim do serviço */
+
+/*Inicio footer */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 30px;
+    color: white;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 8px;
+    color: white;
+}
+
+.footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Fim do footer */
+
+/*Botao whatsapp*/
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+    img {
+        max-width: 74px;
+        transition: transform 0.4s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+.btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    padding: 6px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #272727;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-whatsapp {
+        img {
+            max-width: 60px;
+        }
+    }
+
+}
+
+/* Inicio slider */
+
+.adv {
+    background-color: rgb(250, 250, 250);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.adv-content h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.adv-content p {
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    width: 400%;
+    height: 800px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 760px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background-color: white;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background-color: white;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background-color: white;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background-color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .slide {
+        img {
+            width: 100%;
+            height: 60%;
+        }
+    }
+
+    .navigation-auto {
+        width: 90%;
+        margin-top: 450px
+    }
+
+    .manual-navigation {
+        width: 90%;
+        margin-top: -350px;
+    }
+
+    .slider {
+        width: 100%;
+        margin-bottom: -300px;
+
+    }
+}
+
+/* Final do slider */
