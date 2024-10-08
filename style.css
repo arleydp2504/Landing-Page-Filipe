@@ -612,6 +612,7 @@ mark {
   .slide img {
     width: 100%;
     height: 60%;
+    border-radius: 10px;
   }
   .navigation-auto {
     width: 90%;
@@ -624,6 +625,7 @@ mark {
   .slider {
     width: 100%;
     margin-bottom: -300px;
+    border-radius: 10px;
   }
 }
 /* Final do slider *//*# sourceMappingURL=style.css.map */

@@ -582,6 +582,7 @@ mark {
     width: 400%;
     height: 800px;
     display: flex;
+    
 }
 
 .slides input {
@@ -596,6 +597,7 @@ mark {
 
 .slide img {
     width: 800px;
+
 }
 
 .manual-navigation {
@@ -679,12 +681,14 @@ mark {
         img {
             width: 100%;
             height: 60%;
+            border-radius: 10px;
         }
     }
 
     .navigation-auto {
         width: 90%;
         margin-top: 450px
+        
     }
 
     .manual-navigation {
@@ -695,6 +699,7 @@ mark {
     .slider {
         width: 100%;
         margin-bottom: -300px;
+        border-radius: 10px;
 
     }
 }
