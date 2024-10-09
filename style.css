@@ -653,6 +653,9 @@ mark {
     height: 65%;
     border-radius: 10px;
   }
+  .adv {
+    padding: 14px;
+  }
   .navigation-auto {
     width: 90%;
     margin-top: 580px;
