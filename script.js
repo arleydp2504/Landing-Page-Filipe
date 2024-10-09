@@ -23,20 +23,25 @@ function nextImage() {
 
 /* INICIO DO POP UP */
 
-let modalSite = document.querySelector('dialog');
-let btnFechar = document.querySelectorAll('dialog button');
+document.addEventListener('DOMContentLoaded', () => {
+    let modalSite = document.querySelector('dialog');
+    let btnFechar = document.querySelectorAll('dialog button');
+    let body = document.body;
 
-let cont= 0
+    setTimeout(() => {
+        modalSite.showModal();
+        body.classList.add('no-scroll'); // Adiciona a classe para bloquear a rolagem
+    }, 1000);
 
-setTimeout(() => {
-    modalSite.showModal();
-},2000)
-btnFechar.forEach(button => {
-    button.addEventListener('click', ()=>{
-        modalSite.close()
-        cont = 1;
-    })
-})
+    btnFechar.forEach(button => {
+        button.addEventListener('click', () => {
+            modalSite.close();
+            body.classList.remove('no-scroll'); // Remove a classe para liberar a rolagem
+        });
+    });
+});
+
+
 
 
 /* FINAL DO POP UP */

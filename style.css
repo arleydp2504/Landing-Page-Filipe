@@ -108,6 +108,15 @@ dialog::backdrop {
   cursor: pointer;
 }
 
+.no-scroll {
+  position: fixed; /* Mantém a posição fixa ao bloquear */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden; /* Bloqueia a rolagem */
+}
+
 @media screen and (max-width: 768px) {
   .aviso {
     font-size: 1rem;
