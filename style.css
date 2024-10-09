@@ -362,6 +362,12 @@ mark {
   p {
     text-align: center;
   }
+  .about-content img {
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 /* final do sobre */
 /* Inicio serciço */
@@ -417,6 +423,11 @@ mark {
   z-index: 1;
 }
 
+@media screen and (max-width: 1200px) {
+  .serviços {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 768px) {
   .serviços {
     flex-direction: column;
@@ -431,6 +442,14 @@ mark {
   }
   .services {
     padding-top: 0px;
+  }
+  .serviço img {
+    height: 110%;
+  }
+}
+@media screen and (max-width: 560px) and (max-width: 239px) {
+  .service-content h2 {
+    font-size: 30px;
   }
 }
 /*Fim do serviço */
@@ -701,6 +720,16 @@ mark {
     width: 400%;
     height: 650px;
     display: flex;
+  }
+}
+@media screen and (max-width: 429px) and (max-width: 301px) {
+  .adv-content h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 429px) and (max-width: 245px) {
+  .adv-content h2 {
+    font-size: 25px;
   }
 }
 /* Final do slider */
