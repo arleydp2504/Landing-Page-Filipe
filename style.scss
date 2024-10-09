@@ -401,6 +401,7 @@ mark {
     padding: 0 5px;
 }
 
+
 @media screen and (max-width: 768px) {
     .about-content {
         flex-direction: column;
@@ -413,6 +414,9 @@ mark {
 
     p {
         text-align: center;
+        margin-bottom: 14px;
+        line-height: 160%;
+        font-size: 12px;
     }
 
     .about-content img {
@@ -427,6 +431,7 @@ mark {
         h2 {
             font-size: 30px;
         }
+
 }}
 
 /* final do sobre */

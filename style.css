@@ -365,6 +365,9 @@ mark {
   }
   p {
     text-align: center;
+    margin-bottom: 14px;
+    line-height: 160%;
+    font-size: 12px;
   }
   .about-content img {
     height: 70%;
