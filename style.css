@@ -433,7 +433,7 @@ mark {
     flex-direction: column;
   }
   .services {
-    padding-top: 100px;
+    padding: 14px;
   }
 }
 @media screen and (max-width: 560px) {
