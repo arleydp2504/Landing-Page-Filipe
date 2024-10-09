@@ -476,6 +476,21 @@ mark {
         flex-direction: column;
     }
 
+    .services {
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 560px) {
+    .serviços {
+        flex-direction: column;
+    }
+
+    .services {
+        padding-top: 0px;
+    }
+
 }
 
 /*Fim do serviço */
@@ -687,6 +702,42 @@ mark {
 }
 
 @media screen and (max-width: 768px) {
+    .slide {
+        img {
+            width: 100%;
+            height: 65%;
+            border-radius: 10px;
+        }
+    }
+
+    .navigation-auto {
+        width: 90%;
+        margin-top: 580px
+        
+    }
+
+    .manual-navigation {
+        width: 90%;
+        margin-top: -370px;
+    }
+
+    .slider {
+        width: 100%;
+        margin-bottom: -300px;
+        border-radius: 10px;
+
+    }
+
+    .slides {
+        width: 400%;
+        height: 950px;
+        display: flex;
+        
+    }
+
+}
+
+@media screen and (max-width: 560px) {
     .slide {
         img {
             width: 100%;
