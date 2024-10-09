@@ -491,6 +491,7 @@ mark {
         padding-top: 0px;
     }
 
+
 }
 
 /*Fim do serviço */
@@ -769,7 +770,41 @@ mark {
         height: 950px;
         display: flex;
         
-    }
+    }}
+
+    @media screen and (max-width: 429px) {
+        .slide {
+            img {
+                width: 100%;
+                height: 50%;
+                border-radius: 10px;
+            }
+        }
+    
+        .navigation-auto {
+            width: 90%;
+            margin-top: 300px
+            
+        }
+    
+        .manual-navigation {
+            width: 90%;
+            margin-top: -350px;
+        }
+    
+        .slider {
+            width: 100%;
+            margin-bottom: -470px;
+            border-radius: 10px;
+    
+        }
+    
+        .slides {
+            width: 400%;
+            height: 650px;
+            display: flex;
+            
+        }
 
 }
 
@@ -804,7 +839,6 @@ mark {
 }
 
 
-
 .popup-image {
     max-width: 100%; 
     max-height: 80vh; 
@@ -820,9 +854,6 @@ mark {
     color: black;
     
 }
-
-
-
 
 
 .popup {
@@ -856,32 +887,6 @@ mark {
     color: inherit; 
 }
 
-.popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    z-index: 1000;
-}
-
-.popup-content {
-    position: relative;
-}
-
-.close {
-    position: absolute;
-    top: 10px; 
-    right: 10px; 
-    cursor: pointer;
-    font-size: 24px; 
-    color: black; 
-    z-index: 1010; 
-    text-decoration: none; 
-}
 
 #overlay {
     display: none;
