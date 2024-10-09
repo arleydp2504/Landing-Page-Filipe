@@ -34,6 +34,10 @@ a {
   color: white;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 /* final do reset */
 /* Inicio do pop up */
 dialog {
@@ -368,6 +372,9 @@ mark {
     display: block;
     margin: 0 auto;
   }
+  .about-description h2 {
+    font-size: 30px;
+  }
 }
 /* final do sobre */
 /* Inicio serciço */
@@ -428,12 +435,16 @@ mark {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .serviços {
     flex-direction: column;
   }
   .services {
     padding: 14px;
+    padding-top: 140px;
+  }
+  .service-content h2 {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 560px) {
@@ -441,7 +452,7 @@ mark {
     flex-direction: column;
   }
   .services {
-    padding-top: 0px;
+    padding-top: 14px;
   }
   .serviço img {
     height: 110%;
@@ -647,7 +658,12 @@ mark {
   background-color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 814px) {
+  .slider {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 769px) {
   .slide img {
     width: 100%;
     height: 65%;
@@ -673,6 +689,9 @@ mark {
     width: 400%;
     height: 950px;
     display: flex;
+  }
+  .adv-content h2 {
+    font-size: 30px;
   }
 }
 @media screen and (max-width: 560px) {
