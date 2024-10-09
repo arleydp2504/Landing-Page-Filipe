@@ -619,7 +619,7 @@ mark {
 }
 
 .manual-btn {
-    border: 2px solid white;
+    border: 2px solid rgb(255, 255, 255);
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -690,7 +690,7 @@ mark {
     .slide {
         img {
             width: 100%;
-            height: 60%;
+            height: 50%;
             border-radius: 10px;
         }
     }
@@ -703,7 +703,7 @@ mark {
 
     .manual-navigation {
         width: 90%;
-        margin-top: -350px;
+        margin-top: -500px;
     }
 
     .slider {
@@ -712,6 +712,14 @@ mark {
         border-radius: 10px;
 
     }
+
+    .slides {
+        width: 400%;
+        height: 950px;
+        display: flex;
+        
+    }
+
 }
 
 /* Final do slider */
