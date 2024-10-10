@@ -321,7 +321,7 @@ svg {
 .about {
   background-color: #06121e;
   overflow: hidden;
-  color: white;
+  color: rgb(211, 211, 211);
 }
 
 .about-content {
