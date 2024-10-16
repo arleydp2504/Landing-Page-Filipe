@@ -491,6 +491,12 @@ mark {
   text-align: center;
 }
 
+@media screen and (max-width: 420px) {
+  .footer-logo {
+    width: 50%;
+    height: 50%;
+  }
+}
 /*Fim do footer */
 /*Botao whatsapp*/
 .btn-whatsapp {
@@ -846,6 +852,7 @@ mark {
   height: 0;
   padding-bottom: 56.25%; /* Proporção 16:9 */
   position: relative;
+  margin-bottom: -600px;
 }
 
 .map-container iframe {
@@ -853,5 +860,45 @@ mark {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 50%;
+}
+
+@media screen and (max-width: 2410px) {
+  .map-container {
+    margin-bottom: -400px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .map-container {
+    margin-bottom: -200px;
+  }
+}
+@media screen and (max-width: 814px) {
+  .map-container {
+    margin-bottom: -200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .map-container {
+    margin-bottom: -100px;
+  }
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .map-container {
+    margin-bottom: -40px;
+  }
+  .map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
